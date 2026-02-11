@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Event - Warkop Gen Z</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(images/ijo.jpg);
+            color: #333;
+        }
+
+        header {
+            background-color: rgb(96, 219, 170);
+            text-align: center;
+            padding: 25px;
+            color: black;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: bold;
+        }
+
+        header p {
+            margin: 5px 0 0 ;
+            font-size: bold;
+        }
+        nav {
+            background-color: rgb(86, 103, 202);
+            text-align: center;
+            padding: 12px 0;
+        }
+        
+        nav a:hover{
+            text-decoration: underline;
+        }
+
+        .nav-btn a.active {
+    background-color: #5a6ad1;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+
+        .nav-btn {
+            display: inline-block;
+            margin: 0 8px;
+            background-color: rgb(86, 103, 202);
+            border-radius: 5px;
+        }
+
+        .nav-btn a {
+            color: #f2f2f2;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .nav-btn a:hover {
+            background-color: #5a6ad1;
+            border-radius: 5px;
+        }
+
+    .item{
+            width: 30%;
+            background-color: #00A300;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        
+
+    }
+
+    .foto {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+            
+    }
+     .foto img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: grid;
+     }
+
+     .foto img:hover{
+        transform:scale(1);
+        box-shadow:  #00A300;
+     }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: rgb(130, 190, 152);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+    
+
+        
+
+
+        footer {
+            background-color: rgb(86, 103, 202);
+            color: #f2f2f2;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+
+    </style>
+
+</head>
+
+<header>
+    <h1>WARKOP GEN Z</h1>
+    <p>berikut foto-foto Warkop Gen Z</p>
+</header>
+
+<nav>
+    <div class="nav-btn"><a href="beranda.html">Beranda</a></div>
+    <div class="nav-btn"><a href="visimisi.html">Visi & Misi</a></div>
+    <div class="nav-btn"><a href="menu.html">Menu</a></div>
+    <div class="nav-btn"><a href="kontak.html">Kontak</a></div>
+    <div class="nav-btn"><a href="ulasan.html">Ulasan</a></div>
+    <div class="nav-btn"><a href="promo.html">Promo</a></div>
+    <div class="nav-btn"><a href="event.html" >Event</a></div>
+    <div class="nav-btn"><a href="pertanyaan umum.html">FAQ</a></div>
+    <div class="nav-btn"><a href="image.html" class="active">Image</a></div>
+    
+</nav>
+<div class="container">
+    <div class="foto">
+        <div class="item">
+            <img src="images/kasir.JPEG" alt="Warkop Gen Z 1">
+            <p><b>Untuk pemesanan bisa disini</b></p>
+        </div>
+
+        <div class="item">
+            <a class="active"><img src="images/meja.jpeg" alt="Warkop Gen Z 2"></a>
+            <p><b>Tempat untuk berkumpul dan menikmati hidangan indoor</b></p>
+        </div>
+        <div class="item">
+            <a class="active"><img src="images/outdoor.jpeg" alt="Warkop Gen Z 3"></a>
+            <p><b>Tempat untuk berkumpul dan menikmati hidangan outdoor</b></p>
+        </div>
+        <div class="item">
+            <a class="active"><img src="images/muhsola.jpeg" alt="Warkop Gen Z 4"></a>
+            <p><b>Tempat untuk beribadah umat islam</b></p> 
+        </div>
+        <div class="item">
+            <a class="active"><img src="images/parkiran.jpeg" alt="Warkop Gen Z 5"></a>
+            <p><b>Parkiran yang luas dan aman</b></p> 
+        </div>
+        <div class="item">
+            <a class="active"><img src="images/toilet.jpeg" alt="Warkop Gen Z 6"></a>
+            <p><b>Toilet yang bersih dan nyaman</b></p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Warkop Gen Z..</p>
+</footer>
+</body>
+</html>
