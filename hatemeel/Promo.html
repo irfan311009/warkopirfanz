@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promo - Warkop Gen Z</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background-image:url(images/ijo.jpg);
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+
+header{
+background-color:#2D6A4F;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+header h1{
+margin:0;
+font-size:30px;
+}
+
+header p{
+margin:5px;
+font-weight:bold;
+}
+
+/* NAVBAR */
+
+nav{
+background-color:#1B4332;
+text-align:center;
+padding:12px 0;
+}
+
+.nav-btn{
+display:inline-block;
+margin:0 8px;
+}
+
+.nav-btn a{
+color:#f2f2f2;
+text-decoration:none;
+font-weight:bold;
+padding:10px 20px;
+display:inline-block;
+border-radius:20px;
+transition:0.3s;
+}
+
+.nav-btn a:hover{
+background-color:#40916c;
+transform:scale(1.07);
+}
+
+.nav-btn a.active{
+background-color:#52b788;
+box-shadow:0 0 6px rgba(0,0,0,0.25);
+}
+
+
+.container{
+max-width:1100px;
+margin:30px auto;
+padding:0 20px;
+flex:1;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+padding:20px;
+text-align:center;
+box-shadow:0 5px 12px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
+
+.card h3{
+margin-top:0;
+color:#2D6A4F;
+}
+
+.card p{
+margin:6px 0;
+font-weight:bold;
+}
+
+.harga{
+color:#e63946;
+font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+background-color:#1B4332;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>WARKOP GEN Z</h1>
+<p>Promo & Diskon Terbaru!</p>
+</header>
+
+<nav>
+
+<div class="nav-btn"><a href="index.html">Beranda</a></div>
+<div class="nav-btn"><a href="visimisi.html">Visi & Misi</a></div>
+<div class="nav-btn"><a href="menu.html">Menu</a></div>
+<div class="nav-btn"><a href="kontak.html">Kontak</a></div>
+<div class="nav-btn"><a href="ulasan.html">Ulasan</a></div>
+<div class="nav-btn"><a href="promo.html" class="active">Promo</a></div>
+<div class="nav-btn"><a href="event.html">Event</a></div>
+<div class="nav-btn"><a href="pertanyaan umum.html">FAQ</a></div>
+<div class="nav-btn"><a href="images.html">Image</a></div>
+<div class="nav-btn"><a href="kritik dan saran.html">Kritik dan Saran</a></div>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+<h3>Promo Nasi Goreng</h3>
+<p>Beli 1 Nasi Goreng Special</p>
+<p>Gratis Es Teh Manis</p>
+<p class="harga">Rp15.000</p>
+</div>
+
+<div class="card">
+<h3>Promo Kopi Susu</h3>
+<p>Beli 2 Kopi Susu Gen Z</p>
+<p>Gratis Roti Bakar</p>
+<p class="harga">Rp24.000</p>
+</div>
+
+<div class="card">
+<h3>Promo Ayam Geprek</h3>
+<p>Nasi Ayam Geprek</p>
+<p>Gratis Aqua Botol</p>
+<p class="harga">Rp20.000</p>
+</div>
+
+<div class="card">
+<h3>Paket Nongkrong</h3>
+<p>Roti Bakar + Kopi Hitam</p>
+<p class="harga">Rp18.000</p>
+</div>
+
+<div class="card">
+<h3>Paket Hemat Mie</h3>
+<p>Mie Nyemek Pedas</p>
+<p>+ Es Teh</p>
+<p class="harga">Rp18.000</p>
+</div>
+
+<div class="card">
+<h3>Paket Kenyang</h3>
+<p>Nasi Goreng + Ayam Geprek</p>
+<p>+ Es Teh</p>
+<p class="harga">Rp32.000</p>
+</div>
+
+<div class="card">
+<h3>Promo Pelajar</h3>
+<p>Tunjukkan Kartu Pelajar</p>
+<p>Diskon 10%</p>
+<p class="harga">Semua Menu</p>
+</div>
+
+<div class="card">
+<h3>Promo Matcha</h3>
+<p>Matcha Latte</p>
+<p>Gratis Cireng</p>
+<p class="harga">Rp18.000</p>
+</div>
+
+<div class="card">
+<h3>Paket Santai</h3>
+<p>Pisang Coklat</p>
+<p>+ Es Coklat</p>
+<p class="harga">Rp16.000</p>
+</div>
+
+<div class="card">
+<h3>Paket Teman Nongkrong</h3>
+<p>2 Kopi Hitam</p>
+<p>+ Roti Bakar</p>
+<p class="harga">Rp25.000</p>
+</div>
+
+<div class="card">
+<h3>Paket Malam</h3>
+<p>Mie Nyemek</p>
+<p>+ Kopi Susu</p>
+<p class="harga">Rp20.000</p>
+</div>
+
+<div class="card">
+<h3>Promo Weekend</h3>
+<p>Beli Menu Apa Saja</p>
+<p>Diskon 15%</p>
+<p class="harga">Sabtu & Minggu</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 Warkop Gen Z • FannDoyy
+</footer>
+
+</body>
+</html>
