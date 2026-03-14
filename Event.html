@@ -1,207 +1,247 @@
-
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Event - Warkop Gen Z</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event - Warkop Gen Z</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url(images/ijo.jpg);
-            color: #333;
-        }
+<style>
 
-        header {
-            background-color: rgb(96, 219, 170);
-            text-align: center;
-            padding: 25px;
-            color: black;
-        }
-
-        header h1 {
-            margin: 0;
-            font-weight: bold;
-        }
-
-        header p {
-            margin: 5px;
-            font-weight: bold;
-        }
-
-        nav {
-    background-color: rgb(86, 103, 202);
-    text-align: center;
-    padding: 12px 0;
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background-image:url(images/ijo.jpg);
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+color:#333;
 }
 
-
-
-.nav-btn {
-    display: inline-block;
-    margin: 0 8px;
-    background-color: rgb(86, 103, 202);
+header{
+background-color:#2D6A4F;
+text-align:center;
+padding:20px;
+color:white;
 }
 
-.nav-btn a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 5px;
+header h1{
+margin:0;
+font-size:30px;
 }
 
-.nav-btn a:hover {
-    background-color: #5a6ad1;
-    text-decoration: underline;
+header p{
+margin-top:5px;
+font-weight:bold;
 }
 
-.nav-btn a.active {
-    background-color: #5a6ad1;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+/* NAVBAR */
+
+nav{
+background-color:#1B4332;
+text-align:center;
+padding:12px 0;
 }
 
+.nav-btn{
+display:inline-block;
+margin:0 8px;
+}
 
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
+.nav-btn a{
+color:#f2f2f2;
+text-decoration:none;
+font-weight:bold;
+padding:10px 20px;
+display:inline-block;
+border-radius:20px;
+transition:0.3s;
+}
 
-        .card {
-            background-color: rgb(130, 190, 152);
-            border-radius: 10px;
-            padding: 25px;
-        }
+.nav-btn a:hover{
+background-color:#40916C;
+}
 
-        .card h3 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+.nav-btn a.active{
+background-color:#40916C;
+}
 
-        .event-list {
-            list-style: none;
-            padding: 0;
-        }
+/* CONTAINER */
 
-        .event-list li {
-            background-color: #e6f0e6;
-            margin: 12px 0;
-            padding: 16px;
-            border-radius: 6px;
-            border-left: 5px solid rgb(72, 151, 102);
-        }
+.container{
+max-width:1100px;
+margin:30px auto;
+padding:0 20px;
+flex:1;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
 
-        .event-list li:hover {
-            background-color: #dff5e3;
-        }
+/* CARD PUTIH (INI YANG TADI HILANG) */
 
-        .event-date {
-            font-weight: bold;
-            color: rgb(72, 151, 102);
-        }
+.card{
+background:white;
+border-radius:15px;
+padding:20px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
 
-        .event-tag {
-            display: inline-block;
-            background-color: rgb(86, 103, 202);
-            color: white;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 12px;
-            margin-left: 6px;
-        }
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
 
-        footer {
-            background-color: rgb(86, 103, 202);
-            color: #f2f2f2;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 30px;
-        }
-    </style>
+.card h3{
+margin-top:0;
+color:#2D6A4F;
+}
+
+.event-date{
+font-weight:bold;
+color:#40916C;
+margin-bottom:5px;
+}
+
+.tag{
+display:inline-block;
+background:#40916C;
+color:white;
+padding:4px 10px;
+border-radius:12px;
+font-size:12px;
+margin-bottom:8px;
+}
+
+/* FOOTER */
+
+footer{
+background-color:#1B4332;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:auto;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>WARKOP GEN Z</h1>
-    <p>Harga Murmer, Rasa Mantul!</p>
+<h1>WARKOP GEN Z</h1>
+<p>Event & Acara Seru di Warkop!</p>
 </header>
 
 <nav>
-    <div class="nav-btn"><a href="index.html">Beranda</a></div>
-    <div class="nav-btn"><a href="visimisi.html">Visi & Misi</a></div>
-    <div class="nav-btn"><a href="menu.html">Menu</a></div>
-    <div class="nav-btn"><a href="kontak.html">Kontak</a></div>
-    <div class="nav-btn"><a href="ulasan.html">Ulasan</a></div>
-    <div class="nav-btn"><a href="promo.html">Promo</a></div>
-    <div class="nav-btn"><a href="event.html" class="active">Event</a></div>
-    <div class="nav-btn"><a href="pertanyaan umum.html">FAQ</a></div>
-    <div class="nav-btn"><a href="images.html">Image</a></div>
-    <div class="nav-btn"><a href="kritik dan saran.html">Kritik dan Saran</a></div> 
+
+<div class="nav-btn"><a href="index.html">Beranda</a></div>
+<div class="nav-btn"><a href="visimisi.html">Visi & Misi</a></div>
+<div class="nav-btn"><a href="menu.html">Menu</a></div>
+<div class="nav-btn"><a href="kontak.html">Kontak</a></div>
+<div class="nav-btn"><a href="ulasan.html">Ulasan</a></div>
+<div class="nav-btn"><a href="promo.html">Promo</a></div>
+<div class="nav-btn"><a href="event.html" class="active">Event</a></div>
+<div class="nav-btn"><a href="pertanyaan umum.html">FAQ</a></div>
+<div class="nav-btn"><a href="Images.html">Image</a></div>
+<div class="nav-btn"><a href="kritik dan saran.html">Kritik dan Saran</a></div>
+
 </nav>
 
 <div class="container">
-    <div class="card">
-        <h3>Event & Acara Warkop Gen Z</h3>
 
-        <ul class="event-list">
-            <li>
-                <span class="event-date">Setiap Hari | 19.00 WIB</span>
-                <span class="event-tag">Rutin</span><br>
-                🎸 Live Music Akustik untuk nemenin nongkrong
-            </li>
+<div class="card">
+<h3>Live Music Akustik</h3>
+<div class="event-date">Setiap Hari • 19.00 WIB</div>
+<div class="tag">Rutin</div>
+<p>🎸 Musik akustik santai buat nemenin nongkrong.</p>
+</div>
 
-            <li>
-                <span class="event-date">Jumat Malam | 20.00 WIB</span>
-                <span class="event-tag">Santai</span><br>
-                ☕ Ngopi Bareng & Diskusi Santai
-            </li>
+<div class="card">
+<h3>Ngopi Bareng</h3>
+<div class="event-date">Jumat • 20.00 WIB</div>
+<div class="tag">Santai</div>
+<p>☕ Diskusi santai sambil ngopi bareng teman.</p>
+</div>
 
-            <li>
-                <span class="event-date">Sabtu, 1 Februari 2026 | 18.00 WIB</span>
-                <span class="event-tag">Turnamen</span><br>
-                🕹️ Turnamen Mobile Legends antar komunitas
-            </li>
+<div class="card">
+<h3>Turnamen Mobile Legends</h3>
+<div class="event-date">Sabtu • 18.00 WIB</div>
+<div class="tag">Turnamen</div>
+<p>🕹️ Kompetisi ML antar komunitas lokal.</p>
+</div>
 
-            <li>
-                <span class="event-date">Minggu, 9 Februari 2026 | 16.00 WIB</span>
-                <span class="event-tag">Workshop</span><br>
-                🍹 Workshop Minuman Kekinian
-            </li>
+<div class="card">
+<h3>Workshop Minuman</h3>
+<div class="event-date">Minggu • 16.00 WIB</div>
+<div class="tag">Workshop</div>
+<p>🍹 Belajar bikin minuman kekinian.</p>
+</div>
 
-            <li>
-                <span class="event-date">Jumat, 14 Februari 2026</span>
-                <span class="event-tag">Spesial</span><br>
-                ❤️ Valentine Special – Paket Couple
-            </li>
+<div class="card">
+<h3>Open Mic Night</h3>
+<div class="event-date">Sabtu • 20.00 WIB</div>
+<div class="tag">Open Mic</div>
+<p>🎤 Musik & Stand Up Comedy terbuka untuk umum.</p>
+</div>
 
-            <li>
-                <span class="event-date">Sabtu, 22 Februari 2026 | 20.00 WIB</span>
-                <span class="event-tag">Open Mic</span><br>
-                🎤 Open Mic Musik & Stand Up Comedy
-            </li>
+<div class="card">
+<h3>Board Game Night</h3>
+<div class="event-date">Minggu • 19.00 WIB</div>
+<div class="tag">Games</div>
+<p>🎲 Main board game & quiz berhadiah.</p>
+</div>
 
-            <li>
-                <span class="event-date">Minggu, 28 Februari 2026 | 19.00 WIB</span>
-                <span class="event-tag">Games</span><br>
-                🎲 Board Game & Quiz Night berhadiah
-            </li>
+<div class="card">
+<h3>Nobar Bola</h3>
+<div class="event-date">Saat Match Besar</div>
+<div class="tag">Nobar</div>
+<p>⚽ Nonton bareng pertandingan bola.</p>
+</div>
 
-            <li>
-                <span class="event-date">Akhir Bulan</span>
-                <span class="event-tag">Komunitas</span><br>
-                🤝 Nongkrong Bareng Komunitas Lokal
-            </li>
-        </ul>
-    </div>
+<div class="card">
+<h3>Karaoke Night</h3>
+<div class="event-date">Sabtu Malam</div>
+<div class="tag">Hiburan</div>
+<p>🎤 Karaoke bareng teman-teman.</p>
+</div>
+
+<div class="card">
+<h3>Komunitas Motor</h3>
+<div class="event-date">Akhir Bulan</div>
+<div class="tag">Komunitas</div>
+<p>🏍️ Kopdar komunitas motor lokal.</p>
+</div>
+
+<div class="card">
+<h3>Turnamen Catur</h3>
+<div class="event-date">Minggu Siang</div>
+<div class="tag">Turnamen</div>
+<p>♟️ Kompetisi catur santai berhadiah.</p>
+</div>
+
+<div class="card">
+<h3>Quiz Night</h3>
+<div class="event-date">Jumat Malam</div>
+<div class="tag">Games</div>
+<p>❓ Quiz seru dengan hadiah menarik.</p>
+</div>
+
+<div class="card">
+<h3>Acoustic Special Guest</h3>
+<div class="event-date">Event Spesial</div>
+<div class="tag">Music</div>
+<p>🎶 Penampilan musisi lokal.</p>
+</div>
+
 </div>
 
 <footer>
-    &copy; 2026 Warkop Gen Z | FannDoyy
+© 2026 Warkop Gen Z • FannDoyy
 </footer>
 
 </body>
